@@ -1,10 +1,10 @@
-
-from keras.layers import Input, Conv2D, Flatten, Dense, Conv2DTranspose, Reshape, Lambda, Activation, BatchNormalization, LeakyReLU, Dropout
-from keras.models import Model
-from keras import backend as K
-from keras.optimizers import Adam
-from keras.callbacks import ModelCheckpoint 
-from keras.utils import plot_model
+import tensorflow
+from tensorflow.keras.layers import Input, Conv2D, Flatten, Dense, Conv2DTranspose, Reshape, Lambda, Activation, BatchNormalization, LeakyReLU, Dropout
+from tensorflow.keras.models import Model
+from tensorflow.keras import backend as K
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.callbacks import ModelCheckpoint 
+from tensorflow.keras.utils import plot_model
 
 from utils.callbacks import CustomCallback, step_decay_schedule
 
@@ -58,7 +58,7 @@ class Autoencoder():
                 x = BatchNormalization()(x)
 
             if self.use_dropout:
-                x = Dropout(rate = 0.25)(x)
+                x = Dropout(rate = 0.50)(x)
 
         shape_before_flattening = K.int_shape(x)[1:]
 
@@ -89,7 +89,7 @@ class Autoencoder():
                     x = BatchNormalization()(x)
                 
                 if self.use_dropout:
-                    x = Dropout(rate = 0.25)(x)
+                    x = Dropout(rate = 0.50)(x)
             else:
                 x = Activation('sigmoid')(x)
 
@@ -110,7 +110,7 @@ class Autoencoder():
         optimizer = Adam(lr=learning_rate)
 
 
-        self.model.compile(optimizer=optimizer, loss = 'mean_squared_error')
+        self.model.compile(optimizer=optimizer, loss = 'mean_squared_error',  metrics=['mae'])
 
     def save(self, folder):
 
