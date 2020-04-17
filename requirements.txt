@@ -1,2 +1,3 @@
 strawberryfields
+tensorflow
 tqdm
