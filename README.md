@@ -12,7 +12,7 @@ The challenging feature of Boson-Sampling, as pointed out by creators Scott Aara
 
 <img src="http://www.sciweavers.org/tex2img.php?eq=%20%5Cfrac%7B%28n%2Bm-1%29%21%7D%7Bn%21%28m-1%29%21%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt=" \frac{(n+m-1)!}{n!(m-1)!} " width="103" height="46" />
 
-As well as the fact that Bosons have complex probability amplitudes in their interactions with beam splitters. It was shown by Scheel <b>[2]</b> that boson probability amplitudes are actually related to matrix <a href="https://en.wikipedia.org/wiki/Permanent_(mathematics)">permanents</a>, a problem known to be <b>#P-complete</b>.
+As well as the fact that <a href="https://en.wikipedia.org/wiki/Hong%E2%80%93Ou%E2%80%93Mandel_effect">Bosons have complex probability amplitudes in their interactions with beam splitters</a>. It was shown by Scheel <b>[2]</b> that boson probability amplitudes are actually related to matrix <a href="https://en.wikipedia.org/wiki/Permanent_(mathematics)">permanents</a>, a problem known to be <b>#P-complete</b>.
 
 This is why Boson Sampling is interesting -- It is a relatively simple experiment where a quantum system can do something a classical system cannot (even if there is no currently known killer application for doing so). 
 
