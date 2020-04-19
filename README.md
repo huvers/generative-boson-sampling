@@ -10,7 +10,7 @@
 
 The challenging feature of Boson-Sampling, as pointed out by creators Scott Aaranson and Alex Arkhipov <b>[1]</b>, is that calculating the probability distributions of various outcomes of the experiment becomes classically intractable for large values of **m** and **n**. This is because the Hilbert space of the experiment grows due to photon path-entanglement as:
 
-<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7Bm%21%7D%7Bn%21%28m%20-%20n%29%21%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\frac{m!}{n!(m - n)!} " width="89" height="46" align="center"/>
+<img src="http://www.sciweavers.org/tex2img.php?eq=%5Cfrac%7Bm%21%7D%7Bn%21%28m%20-%20n%29%21%7D%20&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0" align="center" border="0" alt="\frac{(n+m-1)!}{n!(m - 1)!} " width="89" height="46" align="center"/>
 
 As well as the fact that Bosons have complex probability amplitudes in their interactions with beam splitters. It was shown by Scheel <b>[2]</b> that boson probability amplitudes are actually related to matrix <a href="https://en.wikipedia.org/wiki/Permanent_(mathematics)">permanents</a>, a problem known to be <b>#P-complete</b>.
 
