@@ -6,7 +6,7 @@
 ## Background 
 <a href="https://en.wikipedia.org/wiki/Boson_sampling">Boson-Sampling</a> is a fancy sounding quantum optics experiment that may be thought of as a pachinko (or plinko for you Price is Right fans) parlor game for photons, as well as being a non-universal quantum computer (we'll get to this in a bit). One has a number of input modes **m** into which a number of photons **n** are inserted and then interact with <b>(m*(m-1)/2)</b> beam splitters, which in the pachinko analogy are the pins the marbles bounce off of and may go in one direction or another. In Boson-Sampling, we'd like to discover the probability distribution for where the **n** photons may wind up at the output modes.
 
-<img src="https://i.imgur.com/A3npDj2.jpg">
+<img src="https://i.imgur.com/MAd4JV7.jpg">
 
 The challenging feature of Boson-Sampling, as pointed out by creators Scott Aaranson and Alex Arkhipov <b>[1]</b>, is that calculating the probability distributions of various outcomes of the experiment becomes classically intractable for large values of **m** and **n**. This is because the Hilbert space of the experiment grows due to photon path-entanglement as:
 
@@ -14,7 +14,7 @@ The challenging feature of Boson-Sampling, as pointed out by creators Scott Aara
 
 As well as the fact that Bosons have complex probability amplitudes in their interactions with beam splitters. It was shown by Scheel <b>[2]</b> that boson probability amplitudes are actually related to matrix <a href="https://en.wikipedia.org/wiki/Permanent_(mathematics)">permanents</a>, a problem known to be <b>#P-complete</b>.
 
-This is why Boson Sampling is interesting -- It is a simple experiment where a quantum system can do something a classical system cannot (even if there is no currently known killer application for doing so). 
+This is why Boson Sampling is interesting -- It is a relatively simple experiment where a quantum system can do something a classical system cannot (even if there is no currently known killer application for doing so). 
 
 ## generative-boson-sampling 
 
