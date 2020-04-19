@@ -6,7 +6,7 @@
 ## Background 
 Boson-Sampling is a fancy sounding physics experiment that may be thought of as a pachinko (or plinko for you Price is Right fans) parlor game for photons, as well as being a non-universal quantum computer (we'll get to this in a bit). One has a number of input modes <i>**m**</i> into which a number of photons <i>**n**</i> are inserted and then interact with <i><b>(m*(m-1)/2)</b></i> beam splitters, which in the pachinko analogy are the pins the marbles bounce off of and may go in one direction or another. In Boson-Sampling, we'd like to discover the probability distribution for where the <i>**n**</i> photons may wind up at the output modes.
 
-<img src="https://3apq7g38q3kw2yn3fx4bojii-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/104101891_the-price-is-right-plinko.jpg">
+<img src="https://i.imgur.com/A3npDj2.jpg">
 
 The challenging feature of Boson-Sampling, as pointed out by creators Scott Aaranson and Alex Arkhipov <b>[1]</b>, is that calculating the probability distributions of various outcomes of the experiment becomes classically intractable for large values of **m** and **n**. This is because the Hilbert space of the experiment grows due to photon path-entanglement as:
 
